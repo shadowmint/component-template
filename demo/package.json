@@ -1,0 +1,16 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.babel.js",
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp-babel": "^6.1.1",
+    "gulp-browserify": "^0.5.1",
+    "gulp-sass-native": "github:shadowmint/gulp-sass-native"
+  },
+  "dependencies": {
+    "es-component-template": "file:///Users/doug/dev/es-component-template"
+  }
+}

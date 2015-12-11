@@ -1,5 +1,5 @@
 import {Foo} from './foo';
 
-export default function thing() {
+export function thing() {
   new Foo();
 }

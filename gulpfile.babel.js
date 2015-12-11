@@ -1,32 +1,31 @@
 import run from 'run-sequence';
 import nodeunit from 'gulp-nodeunit';
+import sass from 'gulp-sass-native';
 import babel from 'gulp-babel';
 import gulp from 'gulp';
 
 /// Explicitly run items in order
-gulp.task('default', function(callback) {
-  run('scripts', 'tests', 'dist', callback);
+gulp.task('default', (callback) => {
+  run('styles', 'scripts', 'tests', callback);
 });
 
 /// Run tests
-gulp.task('tests', function() {
+gulp.task('tests', () => {
   return gulp.src('./build/**/*.tests.js').pipe(nodeunit());
 });
 
-// Compile ES6 scripts using bable and combine
-gulp.task('scripts', function() {
-  return gulp.src('./src/**/*.js')
+// Compile ES6 scripts using bable
+gulp.task('scripts', () => {
+  return gulp.src('./src/scripts/**/*.js')
     .pipe(babel({
       presets: ['es2015']
     }))
     .pipe(gulp.dest('./build'));
 });
 
-// Compile ES6 scripts using bable and combine
-gulp.task('dist', function() {
-  return gulp.src(['./src/**/*.js', '!./src/**/*.tests.js'])
-    .pipe(babel({
-      presets: ['es2015']
-    }))
-    .pipe(gulp.dest('./dist'));
+// Compile sass into css
+gulp.task('styles', () => {
+  return gulp.src('./src/styles/*.scss')
+    .pipe(sass())
+    .pipe(gulp.dest('./build'));
 });

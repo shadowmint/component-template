@@ -1,15 +1,15 @@
 {
-  "name": "es6-component-template",
+  "name": "es-component-template",
   "version": "0.0.1",
-  "description": "Basic template for an es6 component",
+  "description": "Basic template for a component",
   "license": "MIT",
-  "repository": "shadowmint/es6-component-template",
+  "repository": "shadowmint/es-component-template",
   "engines": {
     "node": ">=0.10.0"
   },
   "files": [
-    "index.js",
-    "dist"
+    "src",
+    "index.js"
   ],
   "dependencies": {},
   "devDependencies": {
@@ -17,6 +17,7 @@
     "gulp": "^3.9.0",
     "gulp-babel": "^6.1.1",
     "gulp-nodeunit": "shadowmint/gulp-nodeunit#0.0.3",
+    "gulp-sass-native": "github:shadowmint/gulp-sass-native",
     "run-sequence": "^1.1.1"
   }
 }
