@@ -1,9 +1,9 @@
 {
-  "name": "es-component-template",
+  "name": "component-template",
   "version": "0.0.1",
   "description": "Basic template for a component",
   "license": "MIT",
-  "repository": "shadowmint/es-component-template",
+  "repository": "shadowmint/component-template",
   "engines": {
     "node": ">=0.10.0"
   },

@@ -2,7 +2,7 @@ import gulp from 'gulp';
 import sass from 'gulp-sass-native';
 import babel_ from 'gulp-babel';
 import browserify from 'gulp-browserify';
-import template from 'es-component-template';
+import template from 'component-template';
 
 // Standard babel factory
 var babel = () => { return babel_({
@@ -23,7 +23,7 @@ gulp.task('styles', function() {
 // Compile scripts and components
 gulp.task('scripts-build', function() {
   gulp.src('./src/*.js').pipe(babel()).pipe(gulp.dest('./tmp'));
-  gulp.src(template.scripts()).pipe(babel()).pipe(gulp.dest('./tmp/es-component-template'));
+  gulp.src(template.scripts()).pipe(babel()).pipe(gulp.dest('./tmp/component-template'));
 });
 
 // Combine scripts

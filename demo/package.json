@@ -11,6 +11,6 @@
     "gulp-sass-native": "github:shadowmint/gulp-sass-native"
   },
   "dependencies": {
-    "es-component-template": "file:///Users/doug/dev/es-component-template"
+    "component-template": ".."
   }
 }

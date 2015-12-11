@@ -1,4 +1,4 @@
-# es-component-template
+# component-template
 
 This is a template for a frontend component.
 
