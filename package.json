@@ -17,7 +17,7 @@
     "gulp": "^3.9.0",
     "gulp-babel": "^6.1.1",
     "gulp-nodeunit": "shadowmint/gulp-nodeunit#0.0.3",
-    "gulp-sass-native": "github:shadowmint/gulp-sass-native",
+    "gulp-sass-native": "github:shadowmint/gulp-sass-native#0.0.6",
     "run-sequence": "^1.1.1"
   }
 }

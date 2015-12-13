@@ -6,6 +6,12 @@ This is a template for a frontend component.
 
     npm install && gulp
 
+## Development
+
+    npm install
+    cd demo
+    npm install && gulp watch
+
 ## Usage
 
 This component is designed to be imported and compiled by a parent package.
